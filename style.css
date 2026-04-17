@@ -1,40 +1,32 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  scroll-behavior: smooth;
-  background: #fff;
+  font-family: Arial;
 }
 
-/* HEADER */
 header {
-  background: rgba(0, 0, 0, 0.9);
+  background: #111;
   color: white;
-  padding: 15px 0;
+  padding: 15px;
   position: sticky;
   top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(5px);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 40px;
-  align-items: center;
+  padding: 0 30px;
 }
 
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 10px;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 nav a:hover {
   color: gold;
 }
 
-/* HERO SECTION */
 .hero {
   height: 90vh;
   background:
@@ -47,37 +39,17 @@ nav a:hover {
   align-items: center;
   color: white;
   text-align: center;
-  text-shadow: 2px 2px 5px black;
 }
 
-.hero h1 {
-  font-size: 3rem;
-}
-
-/* BUTTON */
 .btn {
   background: gold;
-  padding: 12px 25px;
+  padding: 12px 20px;
   margin-top: 15px;
   text-decoration: none;
   color: black;
   border-radius: 5px;
-  font-weight: bold;
-  transition: 0.3s;
 }
 
-.btn:hover {
-  background: orange;
-  transform: scale(1.05);
-}
-
-/* SECTIONS */
-section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-/* ROOMS CARDS */
 .cards {
   display: flex;
   justify-content: center;
@@ -88,13 +60,8 @@ section {
 .card {
   width: 250px;
   background: #f4f4f4;
-  border-radius: 10px;
   padding: 10px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
+  border-radius: 10px;
 }
 
 .card img {
@@ -102,49 +69,13 @@ section {
   border-radius: 10px;
 }
 
-/* GALLERY */
 .gallery img {
-  width: 300px;
+  width: 250px;
   margin: 10px;
   border-radius: 10px;
-  transition: 0.3s;
 }
 
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* FORM */
-form {
-  max-width: 400px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input, button {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-button {
-  background: gold;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-button:hover {
-  background: orange;
-}
-
-/* FOOTER */
-footer {
-  background: #111;
-  color: white;
+section {
+  padding: 40px;
   text-align: center;
-  padding: 15px;
-  margin-top: 20px;
 }
