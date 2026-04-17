@@ -2,62 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>To-Do list</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      display: flex;
-      justify-content: center;
-      margin-top: 50px;
-    }
-    .app {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      width: 320px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      text-align: center;
-    }
-    input {
-      width: 70%;
-      padding: 8px;
-    }
-    button {
-      padding: 8px;
-      cursor: pointer;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin-top: 15px;
-    }
-    li {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px;
-      background: #eee;
-      margin-bottom: 5px;
-      border-radius: 5px;
-    }
-    li.completed {
-      text-decoration: line-through;
-      color: gray;
-    }
-  </style>
+  <title>Grand Luxury Hotel</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="app">
-    <h2>To-Do List</h2>
-    <input type="text" id="taskInput" placeholder="Add a task">
-    <button onclick="addTask()">Add</button>
 
-    <ul id="taskList"></ul>
+<header>
+  <nav>
+    <h2>Hotel</h2>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking">Booking</a>
+    </div>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>Grand Luxury Hotel</h1>
+  <p>Enjoy your dream stay</p>
+  <a href="#booking" class="btn">Book Now</a>
+</section>
+
+<section id="rooms">
+  <h2>Our Rooms</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="images/room1.jpg">
+      <h3>Deluxe Room</h3>
+    </div>
+    <div class="card">
+      <img src="images/room2.jpg">
+      <h3>Suite</h3>
+    </div>
+    <div class="card">
+      <img src="images/room3.jpg">
+      <h3>Standard</h3>
+    </div>
   </div>
+</section>
 
-  <script src="script.js"></script>
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="images/room1.jpg">
+    <img src="images/hotel.jpg">
+    <img src="images/room2.jpg">
+    <img src="images/room3.jpg">
+  </div>
+</section>
+
+<section id="booking">
+  <h2>Book Now</h2>
+  <form onsubmit="bookRoom(event)">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<!-- ✅ Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>📍 Address:</strong> 123 Main Road, New Delhi, India</p>
+  <p><strong>📞 Mobile:</strong> +91 98765 43210</p>
+</section>
+
+<!-- ✅ Footer -->
+<footer style="background:black; color:white; text-align:center; padding:15px;">
+  <p>© 2026 Grand Luxury Hotel</p>
+  <p>📍 New Delhi | 📞 +91 98765 43210</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
