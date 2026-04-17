@@ -1,80 +1,14 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  scroll-behavior: smooth;
-}
-
-header {
-  background: #111;
-  color: white;
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 40px;
-  align-items: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: gold;
-}
-
-.hero {
-  height: 90vh;
-  background: url("images/hero.jpg") center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 2px 2px 5px black;
-}
-
-.hero h1 {
-  font-size: 3rem;
-}
-
-.btn {
-  background: gold;
-  padding: 12px 25px;
-  margin-top: 15px;
-  text-decoration: none;
-  color: black;
-  border-radius: 5px;
-}
-
-section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
 .card {
   width: 250px;
-  background: #f4f4f4;
+  text-align: center;
+  background: #f5f5f5;
+  padding: 15px;
   border-radius: 10px;
-  padding: 10px;
-  transition: 0.3s;
+  margin: 10px;
 }
 
-.card:hover {
-  transform: scale(1.05);
+.card h2 {
+  color: green;
 }
 
 .card img {
@@ -82,33 +16,12 @@ section {
   border-radius: 10px;
 }
 
-.gallery img {
-  width: 300px;
-  margin: 10px;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-form {
-  max-width: 400px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input, button {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-button {
+.btn {
+  display: inline-block;
   background: gold;
-  border: none;
-  cursor: pointer;
+  padding: 10px 15px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
 }

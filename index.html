@@ -2,108 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hotel Suman - Kedarnath</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-    }
-
-    header {
-      background: black;
-      color: white;
-      padding: 15px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 20px;
-    }
-
-    nav a {
-      color: white;
-      margin: 10px;
-      text-decoration: none;
-    }
-
-    .hero {
-      height: 85vh;
-      background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470") center/cover no-repeat;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      text-shadow: 2px 2px 5px black;
-    }
-
-    .btn {
-      background: gold;
-      padding: 12px 20px;
-      margin-top: 15px;
-      text-decoration: none;
-      color: black;
-      border-radius: 5px;
-    }
-
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .cards {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .card {
-      width: 250px;
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .gallery img {
-      width: 250px;
-      margin: 10px;
-      border-radius: 10px;
-    }
-
-    form {
-      width: 300px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    input {
-      padding: 10px;
-    }
-
-    button {
-      padding: 10px;
-      background: gold;
-      border: none;
-      cursor: pointer;
-    }
-
-    footer {
-      background: black;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-  </style>
+  <title>Hotel Suman - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -112,92 +12,32 @@
   <nav>
     <h2>Hotel Suman</h2>
     <div>
-      <a href="#home">Home</a>
-      <a href="#rooms">Rooms</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#booking">Booking</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <h1>Hotel Suman</h1>
-  <p>Stay near Kedarnath Yatra Route</p>
+<section class="hero" style="background:url('images/hero.jpg') center/cover;">
+  <h1>Welcome to Hotel Suman</h1>
+  <p>🏔 Stay Near Kedarnath Yatra Route | Best Comfort in Rudraprayag</p>
 
-  <!-- WhatsApp Booking -->
   <a class="btn"
-     href="https://wa.me/919911344791?text=Hello%20I%20want%20to%20book%20a%20room%20at%20Hotel%20Suman"
-     target="_blank">
-     Book on WhatsApp
+     href="https://wa.me/919911344791?text=I%20want%20to%20book%20a%20room">
+     Book Now
   </a>
 </section>
 
-<!-- ROOMS -->
-<section id="rooms">
-  <h2>Our Rooms</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb2101f">
-      <h3>Deluxe Room</h3>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267">
-      <h3>Family Room</h3>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
-      <h3>Standard Room</h3>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
-    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
-    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa">
-  </div>
-</section>
-
-<!-- BOOKING -->
-<section id="booking">
-  <h2>Book Now</h2>
-
-  <form onsubmit="book(event)">
-    <input type="text" placeholder="Name" required>
-    <input type="email" placeholder="Email" required>
-    <button type="submit">Submit</button>
-  </form>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact Us</h2>
-
-  <p><strong>📍 Address:</strong><br>
-    Hotel Suman,<br>
-    Sitapur, Rudraprayag,<br>
-    Kedarnath Road, Uttarakhand, India
+<section style="text-align:center; padding:40px;">
+  <h2>About Our Hotel</h2>
+  <p>
+    Hotel Suman is a peaceful stay located in Sitapur, Rudraprayag near the
+    holy Kedarnath route. We provide clean rooms, mountain views, hot water,
+    and homely food for travelers and pilgrims.
   </p>
-
-  <p><strong>📞 Mobile:</strong> +91 9911344791</p>
 </section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Hotel Suman - Kedarnath</p>
-</footer>
-
-<script>
-  function book(e) {
-    e.preventDefault();
-    alert("Booking request received! We will contact you soon.");
-  }
-</script>
 
 </body>
 </html>
