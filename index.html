@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .app {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 320px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    input {
+      width: 70%;
+      padding: 8px;
+    }
+    button {
+      padding: 8px;
+      cursor: pointer;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 15px;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px;
+      background: #eee;
+      margin-bottom: 5px;
+      border-radius: 5px;
+    }
+    li.completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Add a task">
+    <button onclick="addTask()">Add</button>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
